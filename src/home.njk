@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+permalink: /index.html
+---
+<div class="container">
+  <section class="projects-section" id="projects" aria-label="Projects">
+    <div class="project-grid">
+      {% for project in projects %}
+      {% if project.url %}
+      <a class="project" href="{{ project.url | escape }}">
+        <span class="project-number" aria-hidden="true">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
+        <h2>{{ project.title | escape }}</h2>
+        <p>{{ project.description | escape }}</p>
+        <span class="project-link">{{ project.linkLabel | escape }} <span aria-hidden="true">{% if project.external %}↗{% else %}→{% endif %}</span></span>
+      </a>
+      {% else %}
+      <article class="project project-pending">
+        <span class="project-number" aria-hidden="true">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
+        <h2>{{ project.title | escape }}</h2>
+        <p>{{ project.description | escape }}</p>
+        <span class="project-link">{{ project.linkLabel | escape }}</span>
+      </article>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  <section class="about-section" id="about" aria-labelledby="about-title">
+    <h2 id="about-title">A little about me.</h2>
+    <p>{{ site.about | escape }}</p>
+  </section>
+</div>

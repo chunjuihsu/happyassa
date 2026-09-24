@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Buy Korean Sool",
+    "description": "A guide to Korean traditional alcohol, from its makers and ingredients to the stories behind each bottle.",
+    "url": "https://buykoreansool.com/",
+    "linkLabel": "Visit Buy Korean Sool",
+    "external": true
+  },
+  {
+    "title": "Corporate Website Development",
+    "description": "A considered corporate website designed to communicate the organization’s work with clarity and credibility.",
+    "url": "/projects/corporate-website-development/",
+    "linkLabel": "View the project",
+    "external": false
+  },
+  {
+    "title": "Korean Snacks for Taiwan",
+    "description": "A direct-to-consumer shop bringing a curated selection of Korean snacks to customers in Taiwan.",
+    "url": "",
+    "linkLabel": "Coming soon",
+    "external": false
+  }
+]
