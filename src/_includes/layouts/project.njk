@@ -2,11 +2,11 @@
 layout: layouts/base.njk
 ---
 <article class="article container">
-  <a class="text-link" href="/#projects"><span aria-hidden="true">←</span> All projects</a>
+  <a class="text-link" href="/#projects"><span aria-hidden="true">←</span>All projects</a>
   <header class="article-header">
     <h1>{{ title | escape }}</h1>
     {% if description %}<p class="article-description">{{ description | escape }}</p>{% endif %}
   </header>
   <div class="prose">{{ content | safe }}</div>
-  <div class="article-end"><a class="text-link" href="/#projects">Return to the collection <span aria-hidden="true">→</span></a></div>
+  <div class="article-end"><a class="text-link" href="/#projects">Return to projects<span aria-hidden="true">→</span></a></div>
 </article>

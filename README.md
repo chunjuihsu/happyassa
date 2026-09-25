@@ -19,36 +19,6 @@ npm run build
 
 The generated website is in `_site/`. Edit source files in `src/`, not generated files.
 
-## Make it yours
-
-- `src/_data/site.json`: site name, description, and about text.
-- `src/_data/projects.json`: project order, titles, categories, descriptions, and destinations.
-- `src/projects/`: Markdown pages explaining individual projects.
-- `src/assets/css/site.css`: typography, colors, layout, and spacing.
-
-Update the three project entries with their final descriptions and destinations as the work develops. An empty `url` renders a non-clickable project box.
-
-Each project box is a single accessible link. Set `url` to an internal path (`/projects/my-project/`), an external HTTPS URL, or a Google Maps share link. Set `external` to `true` for an outward arrow; links open in the same tab. `linkLabel` describes the destination.
-
-To add a detail page, create `src/projects/my-project.md`:
-
-```md
----
-layout: layouts/project.njk
-title: My project
-category: Writing & ideas
-description: A short introduction to the project.
----
-
-Explain the project here using Markdown.
-
-## Why I’m making it
-
-Add your story and useful links.
-```
-
-Then add an entry to `projects.json` pointing to `/projects/my-project/`. Pages and project listings are separate so external destinations need no placeholder pages.
-
 ## Cloudflare Pages
 
 Push this folder to a Git repository and connect it to a Cloudflare Pages project. Use:
