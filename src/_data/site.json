@@ -1,5 +1,15 @@
 {
-"name": "HappyAssa",
-"description": "An independent venture platform for businesses, projects, and initiatives.",
-"about": "Hello, my name is CJ. HappyAssa brings together the businesses, projects, and initiatives I am building or involved in, and serves as a central place to share their progress."
+  "name": "HappyAssa",
+  "url": "https://happyassa.com",
+  "defaultLocale": "en",
+  "description": {
+    "en": "An independent venture platform for businesses, projects, and initiatives.",
+    "zh": "一個匯集企業、專案與各項行動的獨立創業平台。",
+    "ko": "비즈니스, 프로젝트, 다양한 활동을 한곳에 모은 독립 벤처 플랫폼입니다."
+  },
+  "about": {
+    "en": "Hello, my name is CJ. HappyAssa brings together the businesses, projects, and initiatives I am building or involved in, and serves as a central place to share their progress.",
+    "zh": "你好，我是 CJ。HappyAssa 匯集了我正在打造或參與的企業、專案與各項行動，也是一個分享其進展的中心平台。",
+    "ko": "안녕하세요, CJ입니다. HappyAssa는 제가 만들거나 함께하고 있는 비즈니스, 프로젝트와 여러 활동을 한데 모아 소개하고, 그 진행 과정을 공유하는 공간입니다."
+  }
 }

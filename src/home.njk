@@ -1,31 +1,39 @@
 ---
 layout: layouts/base.njk
-permalink: /index.html
+pagination:
+  data: locales.list
+  size: 1
+  alias: localeEntry
+permalink: "{{ localeEntry.pathPrefix }}index.html"
+eleventyComputed:
+  locale: "{{ localeEntry.code }}"
 ---
 <div class="container">
-  <section class="projects-section" id="projects" aria-label="Projects">
+  <section class="projects-section" id="projects" aria-label="{{ translations.projects | localeValue(locale) }}">
     <div class="project-grid">
       {% for project in projects %}
       {% if project.url %}
-      <a class="project" href="{{ project.url | escape }}"{% if project.url | isExternalLink %} target="_blank" rel="noopener noreferrer"{% endif %}>
+      {% set projectUrl = project.url %}
+      {% if not project.external %}{% set projectUrl = project.url | switchLocaleUrl(locale) %}{% endif %}
+      <a class="project" href="{{ projectUrl | escape }}"{% if projectUrl | isExternalLink %} target="_blank" rel="noopener noreferrer"{% endif %}>
         <span class="project-number" aria-hidden="true">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
-        <h2>{{ project.title | escape }}</h2>
-        <p>{{ project.description | escape }}</p>
-        <span class="project-link">{{ project.linkLabel | escape }} <span aria-hidden="true">{% if project.external %}↗{% else %}→{% endif %}</span></span>
+        <h2>{{ project.title | localeValue(locale) | escape }}</h2>
+        <p>{{ project.description | localeValue(locale) | escape }}</p>
+        <span class="project-link">{{ project.linkLabel | localeValue(locale) | escape }} <span aria-hidden="true">{% if project.external %}↗{% else %}→{% endif %}</span></span>
       </a>
       {% else %}
       <article class="project project-pending">
         <span class="project-number" aria-hidden="true">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
-        <h2>{{ project.title | escape }}</h2>
-        <p>{{ project.description | escape }}</p>
-        <span class="project-link">{{ project.linkLabel | escape }}</span>
+        <h2>{{ project.title | localeValue(locale) | escape }}</h2>
+        <p>{{ project.description | localeValue(locale) | escape }}</p>
+        <span class="project-link">{{ project.linkLabel | localeValue(locale) | escape }}</span>
       </article>
       {% endif %}
       {% endfor %}
     </div>
   </section>
   <section class="about-section" id="about" aria-labelledby="about-title">
-    <h2 id="about-title">About HappyAssa.</h2>
-    <p>{{ site.about | escape }}</p>
+    <h2 id="about-title">{{ translations.aboutTitle | localeValue(locale) }}</h2>
+    <p>{{ site.about | localeValue(locale) | escape }}</p>
   </section>
 </div>

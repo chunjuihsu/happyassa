@@ -1,0 +1,67 @@
+{
+  "skipToContent": {
+    "en": "Skip to content",
+    "zh": "跳至主要內容",
+    "ko": "본문으로 건너뛰기"
+  },
+  "languageSwitcher": {
+    "en": "Language selector",
+    "zh": "語言選擇",
+    "ko": "언어 선택"
+  },
+  "mainNavigation": {
+    "en": "Main navigation",
+    "zh": "主要導覽",
+    "ko": "주요 탐색"
+  },
+  "projects": {
+    "en": "Projects",
+    "zh": "專案",
+    "ko": "프로젝트"
+  },
+  "about": {
+    "en": "About",
+    "zh": "關於",
+    "ko": "소개"
+  },
+  "aboutTitle": {
+    "en": "About HappyAssa.",
+    "zh": "關於 HappyAssa。",
+    "ko": "HappyAssa 소개."
+  },
+  "backToTop": {
+    "en": "Back to top",
+    "zh": "返回頂端",
+    "ko": "맨 위로"
+  },
+  "allProjects": {
+    "en": "All projects",
+    "zh": "所有專案",
+    "ko": "모든 프로젝트"
+  },
+  "returnToProjects": {
+    "en": "Return to projects",
+    "zh": "返回專案列表",
+    "ko": "프로젝트 목록으로 돌아가기"
+  },
+  "notFoundTitle": {
+    "en": "Page not found",
+    "zh": "找不到頁面",
+    "ko": "페이지를 찾을 수 없습니다"
+  },
+  "notFoundHeading": {
+    "en": "This page isn’t here.",
+    "zh": "這個頁面不存在。",
+    "ko": "이 페이지를 찾을 수 없습니다."
+  },
+  "notFoundMessage": {
+    "en": "The address may have changed, or the page may no longer exist.",
+    "zh": "網址可能已變更，或此頁面已不存在。",
+    "ko": "주소가 변경되었거나 페이지가 더 이상 존재하지 않을 수 있습니다."
+  },
+  "backHome": {
+    "en": "Back to home",
+    "zh": "返回首頁",
+    "ko": "홈으로 돌아가기"
+  }
+}

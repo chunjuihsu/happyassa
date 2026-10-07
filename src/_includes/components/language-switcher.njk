@@ -1,0 +1,15 @@
+<nav class="language-switcher" aria-label="{{ translations.languageSwitcher | localeValue(locale) }}">
+  <ul class="language-switcher-list">
+    {% for localeEntry in locales.list %}
+    <li>
+      <a
+        class="language-switcher-link{% if localeEntry.code == locale %} is-current{% endif %}"
+        href="{{ page.url | switchLocaleUrl(localeEntry.code) }}"
+        lang="{{ localeEntry.htmlLang }}"
+        hreflang="{{ localeEntry.htmlLang }}"
+        {% if localeEntry.code == locale %}aria-current="page"{% endif %}
+      >{{ localeEntry.label }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

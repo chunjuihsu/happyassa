@@ -1,11 +1,20 @@
 <!doctype html>
-<html lang="en">
+{% set currentLocale = locale or site.defaultLocale %}
+{% set homeUrl = '/' | switchLocaleUrl(currentLocale) %}
+{% set resolvedTitle = title | localeValue(currentLocale) %}
+{% set resolvedDescription = description | localeValue(currentLocale) or site.description | localeValue(currentLocale) %}
+<html lang="{{ locales.map[currentLocale].htmlLang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if title %}{{ title | escape }} — {% endif %}{{ site.name | escape }}</title>
-    <meta name="description" content="{{ (description or site.description) | escape }}">
+    <title>{% if resolvedTitle %}{{ resolvedTitle | escape }} — {% endif %}{{ site.name | escape }}</title>
+    <meta name="description" content="{{ resolvedDescription | escape }}">
     <meta name="color-scheme" content="light">
+    <link rel="canonical" href="{{ page.url | absoluteUrl(site.url) }}">
+    {% for localeEntry in locales.list %}
+    <link rel="alternate" hreflang="{{ localeEntry.htmlLang }}" href="{{ page.url | switchLocaleUrl(localeEntry.code) | absoluteUrl(site.url) }}">
+    {% endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ page.url | switchLocaleUrl(site.defaultLocale) | absoluteUrl(site.url) }}">
     <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
@@ -14,20 +23,25 @@
     <link rel="stylesheet" href="/assets/css/site.css">
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">{{ translations.skipToContent | localeValue(currentLocale) }}</a>
+    <div class="language-bar">
+      <div class="container language-bar-inner">
+        {% include "components/language-switcher.njk" %}
+      </div>
+    </div>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="wordmark" href="/"{% if page.url == '/' %} aria-current="page"{% endif %}>{{ site.name | escape }}<span aria-hidden="true">.</span></a>
-        <nav aria-label="Main navigation">
-          <a href="/#projects">Projects</a>
-          <a href="/#about">About</a>
+        <a class="wordmark" href="{{ homeUrl }}"{% if page.url == homeUrl %} aria-current="page"{% endif %}>{{ site.name | escape }}<span aria-hidden="true">.</span></a>
+        <nav class="primary-nav" aria-label="{{ translations.mainNavigation | localeValue(currentLocale) }}">
+          <a href="{{ homeUrl }}#projects">{{ translations.projects | localeValue(currentLocale) }}</a>
+          <a href="{{ homeUrl }}#about">{{ translations.about | localeValue(currentLocale) }}</a>
         </nav>
       </div>
     </header>
     <main id="main" tabindex="-1">{{ content | safe }}</main>
     <footer class="site-footer container">
-      <a class="footer-name" href="/">{{ site.name | escape }}.</a>
-      <a href="#main">Back to top <span aria-hidden="true">↑</span></a>
+      <a class="footer-name" href="{{ homeUrl }}">{{ site.name | escape }}.</a>
+      <a href="#main">{{ translations.backToTop | localeValue(currentLocale) }} <span aria-hidden="true">↑</span></a>
     </footer>
   </body>
 </html>

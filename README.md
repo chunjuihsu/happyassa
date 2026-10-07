@@ -1,6 +1,6 @@
 # HappyAssa
 
-A minimal, English-only personal site built with Eleventy. Static HTML and CSS, system fonts, no browser JavaScript, animations, shadows, accounts, or external font services.
+A minimal, trilingual personal site built with Eleventy. English is served at the root, Traditional Chinese under `/zh/`, and Korean under `/ko/`. The site uses static HTML and CSS, system fonts, and no browser JavaScript, animations, shadows, accounts, or external font services.
 
 ## Develop
 

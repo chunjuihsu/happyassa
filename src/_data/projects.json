@@ -1,23 +1,59 @@
 [
   {
-    "title": "Buy Korean Sool",
-    "description": "Introduce Korean traditional alcohol through thoughtful content, experiences, and cultural promotion.",
+    "title": {
+      "en": "Buy Korean Sool",
+      "zh": "Buy Korean Sool",
+      "ko": "Buy Korean Sool"
+    },
+    "description": {
+      "en": "Introduce Korean traditional alcohol through thoughtful content, experiences, and cultural promotion.",
+      "zh": "透過用心製作的內容、體驗與文化推廣，介紹韓國傳統酒。",
+      "ko": "세심하게 만든 콘텐츠와 경험, 문화 홍보를 통해 한국 전통주를 소개합니다."
+    },
     "url": "https://buykoreansool.com/",
-    "linkLabel": "Visit Buy Korean Sool",
+    "linkLabel": {
+      "en": "Visit Buy Korean Sool",
+      "zh": "前往 Buy Korean Sool",
+      "ko": "Buy Korean Sool 방문하기"
+    },
     "external": true
   },
   {
-    "title": "Web Solutions",
-    "description": "Help companies build a professional and credible online presence through tailored website solutions.",
+    "title": {
+      "en": "Web Solutions",
+      "zh": "網站解決方案",
+      "ko": "웹 솔루션"
+    },
+    "description": {
+      "en": "Help companies build a professional and credible online presence through tailored website solutions.",
+      "zh": "透過量身打造的網站解決方案，協助企業建立專業且值得信賴的線上形象。",
+      "ko": "맞춤형 웹사이트 솔루션으로 기업이 전문적이고 신뢰도 높은 온라인 입지를 구축하도록 돕습니다."
+    },
     "url": "/projects/web-solutions/",
-    "linkLabel": "View the project",
+    "linkLabel": {
+      "en": "View the project",
+      "zh": "查看專案",
+      "ko": "프로젝트 보기"
+    },
     "external": false
   },
   {
-    "title": "Korean Snacks for Taiwan",
-    "description": "A direct-to-consumer shop bringing a curated selection of Korean snacks to customers in Taiwan.",
+    "title": {
+      "en": "Korean Snacks for Taiwan",
+      "zh": "台灣韓國零食選品",
+      "ko": "대만을 위한 한국 스낵"
+    },
+    "description": {
+      "en": "A direct-to-consumer shop bringing a curated selection of Korean snacks to customers in Taiwan.",
+      "zh": "為台灣顧客精選韓國零食的消費者直營商店。",
+      "ko": "엄선한 한국 스낵을 대만 고객에게 직접 선보이는 소비자 직거래 스토어입니다."
+    },
     "url": "",
-    "linkLabel": "Coming soon",
+    "linkLabel": {
+      "en": "Coming soon",
+      "zh": "即將推出",
+      "ko": "곧 공개됩니다"
+    },
     "external": false
   }
 ]

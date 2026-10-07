@@ -1,0 +1,27 @@
+{
+  "list": [
+    {
+      "code": "en",
+      "label": "English",
+      "htmlLang": "en",
+      "pathPrefix": "/"
+    },
+    {
+      "code": "zh",
+      "label": "中文",
+      "htmlLang": "zh-Hant",
+      "pathPrefix": "/zh/"
+    },
+    {
+      "code": "ko",
+      "label": "한국어",
+      "htmlLang": "ko-KR",
+      "pathPrefix": "/ko/"
+    }
+  ],
+  "map": {
+    "en": { "htmlLang": "en", "pathPrefix": "/" },
+    "zh": { "htmlLang": "zh-Hant", "pathPrefix": "/zh/" },
+    "ko": { "htmlLang": "ko-KR", "pathPrefix": "/ko/" }
+  }
+}

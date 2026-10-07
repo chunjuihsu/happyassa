@@ -1,0 +1,22 @@
+---
+layout: layouts/project.njk
+pagination:
+  data: locales.list
+  size: 1
+  alias: localeEntry
+permalink: "{{ localeEntry.pathPrefix }}projects/web-solutions/index.html"
+eleventyComputed:
+  locale: "{{ localeEntry.code }}"
+  title: "{{ projectContent.webSolutions.title | localeValue(localeEntry.code) }}"
+  description: "{{ projectContent.webSolutions.description | localeValue(localeEntry.code) }}"
+---
+<h2>{{ projectContent.webSolutions.clientWebsites | localeValue(locale) }}</h2>
+<ul>
+  <li>Taiwanese Chamber of Commerce and Industry in Korea: <a href="https://ktcc.kr">ktcc.kr</a></li>
+</ul>
+
+<h2>{{ projectContent.webSolutions.happyAssaWebsites | localeValue(locale) }}</h2>
+<ul>
+  <li>Buy Korean Sool: <a href="https://buykoreansool.com">buykoreansool.com</a></li>
+  <li>Happy Assa Commerce: <a href="https://happyassa.com/commerce">happyassa.com/commerce</a></li>
+</ul>
