@@ -2,7 +2,7 @@
   "skipToContent": {
     "en": "Skip to content",
     "zh": "跳至主要內容",
-    "ko": "본문으로 건너뛰기"
+    "ko": "본문 바로가기"
   },
   "languageSwitcher": {
     "en": "Language selector",
@@ -12,7 +12,7 @@
   "mainNavigation": {
     "en": "Main navigation",
     "zh": "主要導覽",
-    "ko": "주요 탐색"
+    "ko": "주요 메뉴"
   },
   "projects": {
     "en": "Projects",

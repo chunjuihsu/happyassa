@@ -6,9 +6,9 @@
       "ko": "Buy Korean Sool"
     },
     "description": {
-      "en": "Introduce Korean traditional alcohol through thoughtful content, experiences, and cultural promotion.",
-      "zh": "透過用心製作的內容、體驗與文化推廣，介紹韓國傳統酒。",
-      "ko": "세심하게 만든 콘텐츠와 경험, 문화 홍보를 통해 한국 전통주를 소개합니다."
+      "en": "A project introducing Korean traditional alcohol through thoughtful content, experiences, and cultural promotion.",
+      "zh": "透過精心策劃的內容、體驗與文化推廣，介紹韓國傳統酒。",
+      "ko": "정성껏 기획한 콘텐츠와 체험, 문화 홍보를 통해 한국 전통주를 알리는 프로젝트입니다."
     },
     "url": "https://buykoreansool.com/",
     "linkLabel": {
@@ -25,9 +25,9 @@
       "ko": "웹 솔루션"
     },
     "description": {
-      "en": "Help companies build a professional and credible online presence through tailored website solutions.",
-      "zh": "透過量身打造的網站解決方案，協助企業建立專業且值得信賴的線上形象。",
-      "ko": "맞춤형 웹사이트 솔루션으로 기업이 전문적이고 신뢰도 높은 온라인 입지를 구축하도록 돕습니다."
+      "en": "HappyAssa helps companies build a professional and credible online presence through tailored website solutions.",
+      "zh": "HappyAssa 透過量身打造的網站解決方案，協助企業建立專業且值得信賴的線上形象。",
+      "ko": "HappyAssa는 맞춤형 웹사이트 솔루션을 통해 기업이 전문성과 신뢰감을 갖춘 온라인 이미지를 구축하도록 돕습니다."
     },
     "url": "/projects/web-solutions/",
     "linkLabel": {
@@ -40,13 +40,13 @@
   {
     "title": {
       "en": "Korean Snacks for Taiwan",
-      "zh": "台灣韓國零食選品",
-      "ko": "대만을 위한 한국 스낵"
+      "zh": "韓國零食精選",
+      "ko": "대만에서 만나는 한국 간식"
     },
     "description": {
-      "en": "A direct-to-consumer shop bringing a curated selection of Korean snacks to customers in Taiwan.",
-      "zh": "為台灣顧客精選韓國零食的消費者直營商店。",
-      "ko": "엄선한 한국 스낵을 대만 고객에게 직접 선보이는 소비자 직거래 스토어입니다."
+      "en": "A direct-to-consumer shop offering a curated selection of Korean snacks to customers in Taiwan.",
+      "zh": "以台灣市場為主，直接向消費者銷售精選韓國零食的電商平台。",
+      "ko": "엄선한 한국 간식을 대만 소비자에게 직접 판매하는 온라인 스토어입니다."
     },
     "url": "",
     "linkLabel": {
