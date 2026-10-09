@@ -48,12 +48,12 @@
       "zh": "以台灣市場為主，直接向消費者銷售精選韓國零食的電商平台。",
       "ko": "엄선한 한국 간식을 대만 소비자에게 직접 판매하는 온라인 스토어입니다."
     },
-    "url": "",
+    "url": "https://happyassa.com/commerce/",
     "linkLabel": {
-      "en": "Coming soon",
-      "zh": "即將推出",
-      "ko": "곧 공개됩니다"
+      "en": "Visit commerce site",
+      "zh": "前往商城",
+      "ko": "커머스 사이트 방문하기"
     },
-    "external": false
+    "external": true
   }
 ]
